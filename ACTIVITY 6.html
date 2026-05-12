@@ -1,0 +1,51 @@
+<!-- LOGIN SCREEN COMPLETE -->
+<div id="login-gate">
+    <style>
+        :root {
+            --sour-lavender: #b19cd9;
+            --sour-dark-bg: #0d0b14; 
+            --sour-card-bg: #1a1625; 
+            --sour-text-light: #f3f0ff;
+            --sour-muted: #6b5b95;
+            --sour-accent-yellow: #fdfd96;
+        }
+        .login-wrapper {
+            position: fixed; inset: 0; z-index: 9999;
+            background: var(--sour-dark-bg);
+            background-image: radial-gradient(rgba(177, 156, 217, 0.1) 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .login-box {
+            background: var(--sour-card-bg); 
+            border: 2px solid var(--sour-lavender);
+            border-radius: 12px; padding: 50px; width: 400px;
+            text-align: center; box-shadow: 0 0 30px rgba(177, 156, 217, 0.2);
+        }
+        .login-box h1 { font-size: 32px; margin-bottom: 8px; color: var(--sour-lavender); font-family: cursive; }
+        .login-box p { color: var(--sour-text-light); font-size: 14px; margin-bottom: 30px; opacity: 0.8; }
+        .login-box input {
+            width: 100%; padding: 14px 18px; margin-bottom: 16px;
+            border-radius: 8px; border: 1px solid var(--sour-muted);
+            background: rgba(0,0,0,0.3); color: white; font-size: 15px; outline: none;
+        }
+        .login-box button {
+            width: 100%; padding: 14px; background: var(--sour-lavender); color: var(--sour-dark-bg);
+            font-weight: 800; font-size: 16px; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s;
+        }
+        .login-box button:hover { background: var(--sour-accent-yellow); transform: scale(1.02); }
+        .error-msg { color: #ff4d4d; font-size: 13px; margin-bottom: 12px; font-weight: bold; }
+    </style>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h1>it's brutal out here</h1>
+            <p>The SOUR Experience</p>
+            <div class="error-msg" id="err" style="display:none;">Don't leave me hanging! Fill the fields.</div>
+            <input type="text" placeholder="User">
+            <input type="password" placeholder="Password">
+            <button onclick="alert('Unlocked!')">Unlock SOUR</button>
+        </div>
+    </div>
+</div>

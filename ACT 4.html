@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 4 - Audio and Image</title>
+    <style>
+        :root {
+            --sour-lavender: #b19cd9;
+            --sour-dark-bg: #0d0b14; 
+            --sour-card-bg: #1a1625; 
+        }
+        body {
+            margin: 0;
+            background-color: var(--sour-dark-bg);
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+        .audio-page {
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center; 
+            padding-top: 60px;
+            position: relative;
+        }
+        .scroll-text {
+            background: var(--sour-lavender); 
+            color: var(--sour-dark-bg); 
+            padding: 15px 0; 
+            font-size: 24px; 
+            font-weight: 900; 
+            width: 100%;
+            white-space: nowrap; 
+            animation: scrolling 25s linear infinite;
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            position: absolute; 
+            top: 10%;
+        }
+        @keyframes scrolling { 
+            0% { transform: translateX(100%); } 
+            100% { transform: translateX(-100%); } 
+        }
+        
+        .album-art {
+            width: 350px; 
+            border: 12px solid white; 
+            border-bottom: 60px solid white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7); 
+            transform: rotate(-2deg); 
+            margin-bottom: 40px;
+        }
+        .audio-box { 
+            background: var(--sour-card-bg); 
+            padding: 30px; 
+            border-radius: 20px; 
+            border: 2px solid var(--sour-lavender); 
+            text-align: center;
+        }
+        .soft2-title { 
+            color: var(--sour-lavender); 
+            margin-bottom: 15px; 
+            font-size: 22px; 
+            font-weight: 800; 
+        }
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="audio-page">
+        <div class="scroll-text"> SOUR • good 4 u • traitor • drivers license • deja vu </div>
+        
+        <img src="sour_cover.jpg" alt="SOUR Album Art" class="album-art">
+        
+        <div class="audio-box">
+            <h2 class="soft2-title">Now Playing: good 4 u</h2>
+            <audio controls>
+                <source src="good4u.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>

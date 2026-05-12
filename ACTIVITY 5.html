@@ -1,0 +1,43 @@
+<!-- ACT 5: HERO SECTION -->
+<div id="act-5-hero">
+    <style>
+        :root {
+            --sour-lavender: #b19cd9;
+            --sour-dark-bg: #0d0b14; 
+            --sour-card-bg: #1a1625; 
+            --sour-text-light: #f3f0ff;
+            --sour-accent-yellow: #fdfd96;
+            --sour-muted: #6b5b95;
+        }
+        .hero-bg {
+            background-color: var(--sour-dark-bg);
+            background-image: radial-gradient(rgba(177, 156, 217, 0.1) 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden; font-family: sans-serif;
+        }
+        .hero-bg::after {
+            content: "SOUR"; position: absolute; right: 20px; bottom: 20px;
+            font-size: 180px; font-weight: 900; color: rgba(177, 156, 217, 0.05);
+            pointer-events: none; font-family: cursive;
+        }
+        .hero-sticker-box {
+            background: var(--sour-card-bg); padding: 40px; border: 2px solid var(--sour-lavender);
+            box-shadow: 15px 15px 0px rgba(177, 156, 217, 0.1); transform: rotate(-1deg);
+            max-width: 900px; z-index: 2; margin: 20px;
+        }
+        .hero-title { font-size: clamp(35px, 7vw, 70px); line-height: 1.1; margin-bottom: 25px; font-weight: 900; color: white; }
+        .hero-title span { background: var(--sour-muted); padding: 0 10px; color: var(--sour-accent-yellow); }
+        .hero-sub { 
+            font-size: 20px; color: var(--sour-text-light); border-left: 5px solid var(--sour-lavender); 
+            padding-left: 25px; opacity: 0.8; line-height: 1.6;
+        }
+    </style>
+
+    <div class="hero-bg">
+        <div class="hero-sticker-box">
+            <h1 class="hero-title">Do you get <span>deja vu</span>?</h1>
+            <p class="hero-sub">Step back into the unfiltered world of the SOUR era. Experience the raw emotion and cinematic storytelling of the album that redefined the modern pop landscape.</p>
+        </div>
+    </div>
+</div>

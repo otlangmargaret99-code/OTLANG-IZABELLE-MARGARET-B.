@@ -1,0 +1,40 @@
+<style>
+    .btn-grid { 
+        display: flex; 
+        gap: 15px; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        padding: 20px; 
+    }
+
+    /* Base Button Styles */
+    .uberbutton { background: black; color: white; padding: 15px 30px; border: 1px solid #333; cursor: pointer; font-size: 16px; }
+    .amazonbutton { background: #ffd814; color: #000; padding: 15px 30px; border: none; border-radius: 50px; cursor: pointer; font-size: 16px; }
+    .githubbutton { background: #2ea44f; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; }
+    .bootstrapbutton { background: #7952b3; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; }
+    .downloadbutton { background: transparent; color: #f3f0ff; padding: 15px 30px; border: 1px solid #6c757d; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; }
+    .linkedinbutton { background: #0a66c2; color: white; padding: 15px 30px; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 16px; }
+    .savebutton { background: transparent; color: #a2d2ff; padding: 15px 30px; border: 1px solid #0a66c2; border-radius: 50px; font-weight: bold; cursor: pointer; font-size: 16px; }
+
+    /* Act 3 Specific Hover Effects */
+    .btn-grid button { transition: all 0.3s ease; }
+    .uberbutton:hover { background: #222; box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+    .amazonbutton:hover { background: #f7ca00; box-shadow: 0 0 15px rgba(255, 216, 20, 0.4); }
+    .githubbutton:hover { background: #2c974b; box-shadow: 0 4px 15px rgba(46, 164, 79, 0.4); }
+    .bootstrapbutton:hover { background: #614092; box-shadow: 0 4px 15px rgba(121, 82, 179, 0.4); }
+    .downloadbutton:hover { background: #f3f0ff; color: black; box-shadow: 0 0 15px rgba(243, 240, 255, 0.2); }
+    .linkedinbutton:hover { background: #004182; box-shadow: 0 4px 15px rgba(10, 102, 194, 0.4); }
+    .savebutton:hover { background: rgba(162, 210, 255, 0.1); border-width: 2px; }
+</style>
+
+<!-- HTML for Act 3 -->
+<div class="btn-grid">
+    <button class="uberbutton">Request now</button>
+    <button class="amazonbutton">Add to cart</button>
+    <button class="githubbutton">Sign up</button>
+    <button class="bootstrapbutton">Get started</button>
+    <button class="downloadbutton">Download</button>
+    <!-- Updated Text Below -->
+    <button class="linkedinbutton">Apply on company website</button>
+    <button class="savebutton">Save</button>
+</div>
